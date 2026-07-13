@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sage-50: #f4f6f4;
+  --color-sage-100: #e9ece9;
+  --color-sage-200: #d2dad2;
+  --color-sage-300: #b0bfb0;
+  --color-sage-400: #8da18d;
+  --color-sage-500: #4e6e5d;
+  --color-sage-600: #425e4f;
+  --color-sage-700: #354a3e;
+  --color-sage-800: #29382e;
+  --color-sage-900: #1b261f;
+
+  --color-blush-50: #faf6f5;
+  --color-blush-100: #f5ece9;
+  --color-blush-200: #ebd7d0;
+  --color-blush-300: #dfd0c6;
+  --color-blush-400: #d0b9ac;
+  --color-blush-500: #cbb2a6;
+  --color-blush-600: #b99e91;
+
+  --color-cream-50: #fcfbf9;
+  --color-cream-100: #FAF8F5;
+  --color-cream-200: #F3EFE9;
+  --color-cream-300: #e8e2d8;
+  --color-cream-400: #d5cbb8;
+
+  --color-gold-50: #fbf8eb;
+  --color-gold-100: #f6edd0;
+  --color-gold-200: #eddba2;
+  --color-gold-300: #e1c46e;
+  --color-gold-400: #dfba5b;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b9942a;
+  --color-gold-700: #93731f;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+}
+
+@utility text-glow {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+@utility bg-glass {
+  background: rgba(250, 248, 245, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@utility bg-glass-dark {
+  background: rgba(78, 110, 93, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(78, 110, 93, 0.1);
+}
+
+/* Custom styles for high-end feel */
+body {
+  background-color: #FAF8F5;
+  color: #2D3732;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d2dad2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b0bfb0;
+}
+
+/* Ambient glow animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+.ambient-orb {
+  filter: blur(80px);
+  animation: pulseGlow 10s ease-in-out infinite alternate;
+}

@@ -15,7 +15,8 @@ import {
   Activity,
   User,
   Users,
-  Leaf
+  Leaf,
+  Gem
 } from "lucide-react";
 
 const iconMap = {
@@ -30,7 +31,8 @@ const iconMap = {
   User,
   Users,
   ShieldAlert,
-  Leaf
+  Leaf,
+  Gem
 };
 
 export default function ServiceDetail({ service, onBack, onBookClick }) {
@@ -43,8 +45,10 @@ export default function ServiceDetail({ service, onBack, onBookClick }) {
   const SelectedIcon = iconMap[service.icon] || Sparkles;
 
   // Calculate review score average
-  const totalReviews = service.reviews.length;
-  const ratingAverage = (service.reviews.reduce((acc, r) => acc + r.rating, 0) / totalReviews).toFixed(1);
+  const totalReviews = service.reviews ? service.reviews.length : 0;
+  const ratingAverage = totalReviews > 0
+    ? (service.reviews.reduce((acc, r) => acc + r.rating, 0) / totalReviews).toFixed(1)
+    : null;
 
   return (
     <div className="bg-[#FAF8F5] py-12">
@@ -127,7 +131,8 @@ export default function ServiceDetail({ service, onBack, onBookClick }) {
               </div>
             </div>
 
-            {/* Customer Reviews Section */}
+            {/* Customer Reviews Section — only shown if reviews exist */}
+            {totalReviews > 0 && (
             <div className="bg-cream-50 border border-cream-200/60 rounded-3xl p-8 shadow-sm">
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-cream-200/60 pb-6 mb-8">
                 <div>
@@ -179,6 +184,7 @@ export default function ServiceDetail({ service, onBack, onBookClick }) {
               </div>
 
             </div>
+            )}
 
           </div>
 
@@ -204,7 +210,7 @@ export default function ServiceDetail({ service, onBack, onBookClick }) {
                       <Clock size={16} className={selectedDuration === tier.duration ? "text-sage-500 animate-pulse" : "text-sage-400"} />
                       <span className="font-sans font-semibold text-xs uppercase tracking-wider">{tier.duration} Minutes</span>
                     </div>
-                    <span className="font-serif font-bold text-base text-sage-800">${tier.price}</span>
+                    <span className="font-serif font-bold text-base text-sage-800">৳{tier.price}</span>
                   </div>
                 ))}
               </div>
@@ -213,7 +219,7 @@ export default function ServiceDetail({ service, onBack, onBookClick }) {
               <div className="border-t border-cream-200 pt-6 mb-8 flex justify-between items-baseline">
                 <span className="text-xs text-sage-500 uppercase tracking-widest">Total Price</span>
                 <div className="text-right">
-                  <span className="font-serif text-3xl font-bold text-sage-800">${currentPrice}</span>
+                  <span className="font-serif text-3xl font-bold text-sage-800">৳{currentPrice}</span>
                   <span className="text-[10px] text-sage-400 block mt-1">all taxes and oils included</span>
                 </div>
               </div>

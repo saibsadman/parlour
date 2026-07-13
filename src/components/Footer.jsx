@@ -99,16 +99,16 @@ export default function Footer({ setView }) {
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-gold-400 shrink-0 mt-0.5" />
                 <span className="text-xs text-sage-200 leading-relaxed font-light">
-                  128 Serenity Lane, Wellness District,<br />London, W1K 7QW
+                  Road no 11, Banani,<br />Dhaka, W1K 7QW
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-gold-400 shrink-0" />
-                <span className="text-xs text-sage-200 font-light">+44 (0) 20 7946 0885</span>
+                <span className="text-xs text-sage-200 font-light">+8801853682441</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-gold-400 shrink-0" />
-                <span className="text-xs text-sage-200 font-light">bookings@saibsmassage.co.uk</span>
+                <span className="text-xs text-sage-200 font-light">saibsadman98@gmail.com</span>
               </div>
             </div>
           </div>

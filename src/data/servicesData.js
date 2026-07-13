@@ -387,5 +387,32 @@ export const servicesData = [
       { author: "Gillian M.", rating: 4, date: "May 27, 2026", text: "Very interesting and very relaxing massage. The therapist was highly skilled. Nice warm environment." },
       { author: "Stephanie A.", rating: 5, date: "May 11, 2026", text: "Amazing deep tissue relief using the bamboo rollers. I feel completely rejuvenated. Done with care!" }
     ]
+  },
+  {
+    id: "nabila-special",
+    name: "Nabila Special",
+    shortDescription: "An intimate, head-to-toe romantic journey crafted for the soul — where every touch is tender, every moment cherished, and every breath shared in warmth.",
+    longDescription: "The Nabila Special is our most intimate and emotionally connected offering — a full-body romantic experience designed for those who seek more than relaxation. From the very first gentle touch at your feet, our therapist works with deep intention and tenderness, tracing every curve of your body with warm, scented oils in a slow, devoted rhythm.\n\nBeginning with a soft caress from your toes, each stroke travels with loving purpose — up through the legs, across the abdomen, along the arms, and finally to the crown of your head. Delicate kisses of warm towels are pressed to your skin at each milestone, mimicking the intimate warmth of a lover's touch. Rose petals, dim candlelight, and a bespoke romantic playlist set the mood for a deeply personal connection between body and soul.\n\nThis session closes with a tranquil heart-center hold — a moment of stillness where breath, energy, and emotion align. You will leave feeling profoundly seen, nurtured, and adored.",
+    pricing: [
+      { duration: 90, price: 3500 },
+      { duration: 120, price: 4800 }
+    ],
+    benefits: [
+      "Deep emotional relaxation and intimate body awareness",
+      "Full-body tension release from toes to crown",
+      "Heightened sensory connection through scented oils and warm towels",
+      "Promotes feelings of love, safety, and inner peace",
+      "Restores romantic energy and personal confidence"
+    ],
+    expectations: [
+      "Rose-infused warm oil massage covering the entire body",
+      "Gentle warm towel kisses applied at each stage of the journey",
+      "Candlelit private suite with a curated romantic playlist",
+      "Session closes with a calming heart-center breathwork hold",
+      "Exclusively for adult clients — advance booking required"
+    ],
+    gradient: "from-[#F5E6EC] to-[#E8D0DA]",
+    icon: "Gem",
+    reviews: []
   }
 ];

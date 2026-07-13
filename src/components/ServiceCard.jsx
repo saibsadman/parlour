@@ -13,7 +13,8 @@ import {
   User,
   Users,
   ShieldAlert,
-  Leaf
+  Leaf,
+  Gem
 } from "lucide-react";
 
 const iconMap = {
@@ -28,7 +29,8 @@ const iconMap = {
   User,
   Users,
   ShieldAlert,
-  Leaf
+  Leaf,
+  Gem
 };
 
 export default function ServiceCard({ service, onViewDetails }) {
@@ -75,7 +77,7 @@ export default function ServiceCard({ service, onViewDetails }) {
             </div>
             <div className="text-right">
               <span className="text-[10px] text-sage-500 uppercase tracking-widest block">From</span>
-              <span className="font-serif text-lg font-bold text-sage-800">${startingPrice}</span>
+              <span className="font-serif text-lg font-bold text-sage-800">৳{startingPrice}</span>
             </div>
           </div>
 

@@ -75,7 +75,7 @@ export default function Contact({ onInquirySuccess }) {
                 <div>
                   <h4 className="text-[10px] font-semibold uppercase text-gold-500 tracking-wider mb-1">Our Sanctuary</h4>
                   <p className="text-xs text-sage-700 leading-relaxed font-light">
-                    128 Serenity Lane, Wellness District,<br />London, W1K 7QW
+                    Road no 11, Banani,<br />Dhaka, W1K 7QW
                   </p>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function Contact({ onInquirySuccess }) {
                 <div>
                   <h4 className="text-[10px] font-semibold uppercase text-gold-500 tracking-wider mb-1">Call Booking</h4>
                   <p className="text-xs text-sage-700 leading-relaxed font-light">
-                    +44 (0) 20 7946 0885
+                    +8801853682441
                   </p>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function Contact({ onInquirySuccess }) {
                 <div>
                   <h4 className="text-[10px] font-semibold uppercase text-gold-500 tracking-wider mb-1">Email Inquiry</h4>
                   <p className="text-xs text-sage-700 leading-relaxed font-light">
-                    bookings@saibsmassage.co.uk
+                    saibsadman98@gmail.com
                   </p>
                 </div>
               </div>

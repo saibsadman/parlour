@@ -44,13 +44,26 @@ export default function ServiceCard({ service, onViewDetails }) {
   return (
     <div className="bg-cream-50 rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
       
-      {/* Decorative Gradient Header with Icon */}
-      <div className={`h-48 bg-gradient-to-br ${service.gradient} flex items-center justify-center relative transition-transform duration-300 group-hover:scale-[1.02] overflow-hidden`}>
-        {/* Soft background orb */}
-        <div className="absolute w-36 h-36 bg-cream-50/20 rounded-full blur-xl pointer-events-none" />
-        
-        <div className="p-5 bg-cream-100/90 text-sage-600 rounded-3xl shadow-sm border border-cream-200/40 relative z-10 transition-transform duration-500 group-hover:rotate-6">
-          <SelectedIcon size={36} strokeWidth={1.5} className="text-sage-500" />
+      {/* Photo Header */}
+      <div className="h-52 relative overflow-hidden">
+        {service.image ? (
+          <img
+            src={service.image}
+            alt={service.name}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        ) : (
+          <div className={`w-full h-full bg-gradient-to-br ${service.gradient} flex items-center justify-center`}>
+            <div className="p-5 bg-cream-100/90 rounded-3xl shadow-sm border border-cream-200/40">
+              <SelectedIcon size={36} strokeWidth={1.5} className="text-sage-500" />
+            </div>
+          </div>
+        )}
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+        {/* Icon badge */}
+        <div className="absolute bottom-3 left-3 p-2.5 bg-cream-50/90 backdrop-blur-sm rounded-2xl shadow-md border border-cream-200/40 transition-transform duration-500 group-hover:rotate-6">
+          <SelectedIcon size={20} strokeWidth={1.5} className="text-sage-500" />
         </div>
       </div>
 

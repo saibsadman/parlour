@@ -69,19 +69,29 @@ export default function ServiceDetail({ service, onBack, onBookClick }) {
           {/* Left Column: Information & Reviews */}
           <div className="lg:col-span-7 flex flex-col gap-10">
             
-            {/* Header Banner (Aesthetic gradient with icon) */}
-            <div className={`rounded-3xl p-8 md:p-12 bg-gradient-to-br ${service.gradient} border border-cream-200/50 shadow-sm relative overflow-hidden`}>
-              <div className="absolute top-0 right-0 w-48 h-48 bg-cream-50/10 rounded-full blur-2xl pointer-events-none" />
-              
-              <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6">
-                <div className="p-4 bg-cream-50/95 text-sage-600 rounded-2xl shadow-sm border border-cream-200/40">
-                  <SelectedIcon size={32} strokeWidth={1.5} className="text-sage-500" />
+            {/* Hero Image Banner */}
+            <div className="rounded-3xl overflow-hidden relative shadow-sm border border-cream-200/50" style={{height: '320px'}}>
+              {service.image ? (
+                <img
+                  src={service.image}
+                  alt={service.name}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className={`w-full h-full bg-gradient-to-br ${service.gradient}`} />
+              )}
+              {/* Dark overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              {/* Title & icon over image */}
+              <div className="absolute bottom-0 left-0 right-0 p-8 flex items-end gap-5">
+                <div className="p-3.5 bg-cream-50/95 rounded-2xl shadow-sm border border-cream-200/40 shrink-0">
+                  <SelectedIcon size={28} strokeWidth={1.5} className="text-sage-500" />
                 </div>
                 <div>
-                  <h1 className="font-serif text-3xl md:text-4xl font-bold text-sage-800 tracking-wide">
+                  <h1 className="font-serif text-3xl md:text-4xl font-bold text-white tracking-wide drop-shadow-md">
                     {service.name}
                   </h1>
-                  <span className="block font-sans text-[10px] font-semibold text-gold-600 uppercase tracking-widest mt-1">
+                  <span className="block font-sans text-[10px] font-semibold text-gold-300 uppercase tracking-widest mt-1">
                     Saib's Premium Treatment
                   </span>
                 </div>

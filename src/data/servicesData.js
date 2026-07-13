@@ -2,12 +2,13 @@ export const servicesData = [
   {
     id: "swedish-massage",
     name: "Swedish Massage",
+    image: "/images/swedish.jpg",
     shortDescription: "A classic, gentle full-body massage designed to promote overall relaxation, improve circulation, and soothe sore muscles.",
     longDescription: "Our Swedish Massage is the quintessential wellness therapy. Using a combination of long, gliding strokes (effleurage), kneading (petrissage), and gentle friction, our certified therapists work to release tension in the superficial muscle layers. This treatment is ideal for first-time spa-goers or anyone seeking to reduce stress and achieve a deep state of calm.",
     pricing: [
-      { duration: 30, price: 55 },
-      { duration: 60, price: 85 },
-      { duration: 90, price: 120 }
+      { duration: 30, price: 1200 },
+      { duration: 60, price: 2000 },
+      { duration: 90, price: 2800 }
     ],
     benefits: [
       "Promotes deep physical and mental relaxation",
@@ -35,12 +36,13 @@ export const servicesData = [
   {
     id: "deep-tissue-massage",
     name: "Deep Tissue Massage",
+    image: "/images/deep-tissue.jpg",
     shortDescription: "A therapeutic massage targeting deeper muscle layers and connective tissues to relieve chronic pain and muscle stiffness.",
     longDescription: "Designed for those experiencing chronic tension or recovering from intense physical activity, our Deep Tissue Massage focuses on the deeper layers of muscle tissue. Using slow, deliberate strokes and deep finger pressure, the therapist targets specific problem areas to break down adhesions (muscle knots) and restore natural range of motion.",
     pricing: [
-      { duration: 30, price: 65 },
-      { duration: 60, price: 95 },
-      { duration: 90, price: 135 }
+      { duration: 30, price: 1400 },
+      { duration: 60, price: 2300 },
+      { duration: 90, price: 3200 }
     ],
     benefits: [
       "Releases chronic muscle tension and stubborn knots",
@@ -68,11 +70,12 @@ export const servicesData = [
   {
     id: "hot-stone-massage",
     name: "Hot Stone Massage",
+    image: "/images/hot-stone.jpg",
     shortDescription: "A luxurious warming therapy using heated basalt stones to deeply relax muscles and balance energy flow.",
     longDescription: "Experience the ultimate in comforting warmth. During this treatment, smooth, heated volcanic basalt stones are placed on key energy centers of your body and used as extensions of the therapist's hands. The deep, penetrating heat relaxes muscles, allowing for deeper access without heavy pressure, resulting in an exceptionally soothing and grounding experience.",
     pricing: [
-      { duration: 60, price: 105 },
-      { duration: 90, price: 145 }
+      { duration: 60, price: 2500 },
+      { duration: 90, price: 3500 }
     ],
     benefits: [
       "Melts away muscle tension through deep thermal penetration",
@@ -100,12 +103,13 @@ export const servicesData = [
   {
     id: "aromatherapy-massage",
     name: "Aromatherapy Massage",
+    image: "/images/aromatherapy.jpg",
     shortDescription: "A sensory journey combining gentle massage with customized, therapeutic-grade organic essential oils.",
     longDescription: "Our Aromatherapy Massage combines the healing power of touch with the therapeutic properties of organic essential oils. Before your treatment begins, you will select from our curated botanical blends—whether you seek uplifting citrus, calming lavender, or grounding eucalyptus. The therapist uses gentle, rhythmic strokes to help your skin absorb the oils while you inhale their healing aromas.",
     pricing: [
-      { duration: 30, price: 60 },
-      { duration: 60, price: 90 },
-      { duration: 90, price: 125 }
+      { duration: 30, price: 1300 },
+      { duration: 60, price: 2200 },
+      { duration: 90, price: 3000 }
     ],
     benefits: [
       "Calms the nervous system and uplifts emotional state",
@@ -133,11 +137,12 @@ export const servicesData = [
   {
     id: "thai-massage",
     name: "Thai Massage",
+    image: "/images/thai.jpg",
     shortDescription: "An energizing, interactive session incorporating yoga-like stretching, acupressure, and joint mobilization.",
     longDescription: "Known as 'lazy man's yoga,' Thai Massage is performed on a comfortable floor mat with the client fully clothed. Your therapist uses their hands, elbows, knees, and feet to guide you through a series of yoga-like stretches while applying rhythmic pressure along the body's major energy lines (Sen lines). This treatment improves flexibility, relieves tension, and balances energy.",
     pricing: [
-      { duration: 60, price: 90 },
-      { duration: 90, price: 130 }
+      { duration: 60, price: 2200 },
+      { duration: 90, price: 3100 }
     ],
     benefits: [
       "Significantly increases range of motion and flexibility",
@@ -165,12 +170,13 @@ export const servicesData = [
   {
     id: "full-body-relaxation-massage",
     name: "Full Body Relaxation Massage",
+    image: "/images/full-body.jpg",
     shortDescription: "A gentle, therapeutic treatment focused entirely on melting away stress and calming your mind.",
     longDescription: "Our signature Full Body Relaxation Massage is tailored for individuals seeking a sanctuary from everyday life. Focusing on light, rhythmic strokes and smooth flowing movements, this massage induces a deep state of peace. We utilize organic, soothing botanical oils and hot towels to cocoon you in comfort, nurturing both your body and spirit.",
     pricing: [
-      { duration: 60, price: 80 },
-      { duration: 90, price: 115 },
-      { duration: 120, price: 155 }
+      { duration: 60, price: 2000 },
+      { duration: 90, price: 2800 },
+      { duration: 120, price: 3800 }
     ],
     benefits: [
       "Calms hyperactive nervous systems and reduces stress",
@@ -198,11 +204,12 @@ export const servicesData = [
   {
     id: "prenatal-massage",
     name: "Prenatal Massage",
+    image: "/images/prenatal.jpg",
     shortDescription: "A nurturing and safe massage designed specifically for expectant mothers in their second or third trimester.",
     longDescription: "Specifically tailored to the unique needs of pregnancy, our Prenatal Massage relieves the physical discomforts associated with carrying a child. Utilizing safe positioning with specialized supportive cushions and organic, scent-free oils, our trained therapists gently address backaches, leg cramps, swollen ankles, and fatigue, providing a tranquil space for mother and baby.",
     pricing: [
-      { duration: 60, price: 95 },
-      { duration: 90, price: 130 }
+      { duration: 60, price: 2400 },
+      { duration: 90, price: 3300 }
     ],
     benefits: [
       "Relieves backaches, neck strain, and hip joint pain",
@@ -230,11 +237,12 @@ export const servicesData = [
   {
     id: "reflexology-massage",
     name: "Reflexology (Foot Massage)",
+    image: "/images/reflexology.jpg",
     shortDescription: "An ancient healing art targeting pressure points on the feet to promote systemic health and relaxation.",
     longDescription: "Reflexology is based on the principle that specific points on the soles, heels, and toes of the feet correspond to different organs and systems throughout the body. By applying focused pressure using thumbs and fingers to these reflex zones, our practitioners stimulate the body's natural healing pathways, relieve fatigue, and restore a sense of overall balance.",
     pricing: [
-      { duration: 30, price: 50 },
-      { duration: 60, price: 75 }
+      { duration: 30, price: 1100 },
+      { duration: 60, price: 1900 }
     ],
     benefits: [
       "Relieves tired, aching feet and lower leg fatigue",
@@ -262,12 +270,13 @@ export const servicesData = [
   {
     id: "head-shoulder-massage",
     name: "Head & Shoulder Massage",
+    image: "/images/head-shoulder.jpg",
     shortDescription: "A focused, stress-relieving massage targeting key areas of stored tension: the neck, shoulders, and scalp.",
     longDescription: "For those who hold stress in their upper body or spend long hours in front of screens, this treatment offers targeted relief. Combining muscle kneading along the neck and shoulders with acupressure and gentle friction across the scalp, this massage helps release tension, reduce headaches, and clear mental clutter in a short, effective session.",
     pricing: [
-      { duration: 30, price: 50 },
-      { duration: 45, price: 65 },
-      { duration: 60, price: 80 }
+      { duration: 30, price: 1100 },
+      { duration: 45, price: 1600 },
+      { duration: 60, price: 2000 }
     ],
     benefits: [
       "Quickly relieves tension in the neck, shoulders, and upper back",
@@ -295,11 +304,12 @@ export const servicesData = [
   {
     id: "couples-massage",
     name: "Couples Massage",
+    image: "/images/couples.jpg",
     shortDescription: "Share a peaceful relaxation experience side-by-side with a partner, friend, or family member in our custom suite.",
     longDescription: "Relax together in our spacious couples' suite. Perfect for anniversaries, birthdays, or simply a shared retreat, this service allows two people to receive a massage of their choice (such as Swedish or Deep Tissue) simultaneously from two separate therapists. The room is enhanced with soft lighting, beautiful aromas, and a warm, shared peaceful energy.",
     pricing: [
-      { duration: 60, price: 180 },
-      { duration: 90, price: 260 }
+      { duration: 60, price: 4200 },
+      { duration: 90, price: 6000 }
     ],
     benefits: [
       "Provides a shared bonding experience in a peaceful setting",
@@ -327,11 +337,12 @@ export const servicesData = [
   {
     id: "sports-massage",
     name: "Sports Massage",
+    image: "/images/sports.jpg",
     shortDescription: "A dynamic, performance-focused massage to aid athletic recovery, increase range of motion, and prevent injury.",
     longDescription: "Tailored to active individuals and athletes, our Sports Massage combines deep tissue techniques, active stretching, and targeted compression. Designed to address the muscles specific to your sport, this therapy improves tissue elasticity, reduces lactic acid buildup, and enhances overall flexibility, helping you recover faster and perform at your best.",
     pricing: [
-      { duration: 60, price: 95 },
-      { duration: 90, price: 135 }
+      { duration: 60, price: 2400 },
+      { duration: 90, price: 3300 }
     ],
     benefits: [
       "Speeds up post-workout muscle recovery times",
@@ -359,11 +370,12 @@ export const servicesData = [
   {
     id: "bamboo-massage",
     name: "Bamboo Massage",
+    image: "/images/bamboo.jpg",
     shortDescription: "An exotic deep-relaxation therapy utilizing warmed hollow bamboo canes to roll and knead muscles.",
     longDescription: "Discover the healing rhythms of the East. In our Bamboo Massage, hollow bamboo canes of varying lengths and diameters are heated and used as massage tools. The therapist rolls and kneads the warm bamboo over your muscles, providing a deep, consistent pressure that effortlessly breaks down tension. The thermal effect combined with the rolling motion creates a highly relaxing and unique sensory experience.",
     pricing: [
-      { duration: 60, price: 100 },
-      { duration: 90, price: 140 }
+      { duration: 60, price: 2600 },
+      { duration: 90, price: 3600 }
     ],
     benefits: [
       "Relieves deep-seated muscle tension and soreness",
@@ -391,8 +403,9 @@ export const servicesData = [
   {
     id: "nabila-special",
     name: "Nabila Special",
+    image: "/images/nabila-special.jpg",
     shortDescription: "An intimate, head-to-toe romantic journey crafted for the soul — where every touch is tender, every moment cherished, and every breath shared in warmth.",
-    longDescription: "The Nabila Special is our most intimate and emotionally connected offering — a full-body romantic experience designed for those who seek more than relaxation. From the very first gentle touch at your feet, our therapist works with deep intention and tenderness, tracing every curve of your body with warm, scented oils in a slow, devoted rhythm.\n\nBeginning with a soft caress from your toes, each stroke travels with loving purpose — up through the legs, across the abdomen, along the arms, and finally to the crown of your head. Delicate kisses of warm towels are pressed to your skin at each milestone, mimicking the intimate warmth of a lover's touch. Rose petals, dim candlelight, and a bespoke romantic playlist set the mood for a deeply personal connection between body and soul.\n\nThis session closes with a tranquil heart-center hold — a moment of stillness where breath, energy, and emotion align. You will leave feeling profoundly seen, nurtured, and adored.",
+    longDescription: "The Nabila Special is our most intimate and emotionally connected offering — a full-body romantic experience designed for those who seek more than relaxation. From the very first gentle touch at your feet, our therapist works with deep intention and tenderness, tracing every curve of your body with warm, scented oils in a slow, devoted rhythm.\n\nBeginning with a soft caress from your toes, each stroke travels with loving purpose — up through the legs, across the abdomen, along the arms, and finally to the crown of your head. Delicate kisses of warm towels are pressed to your skin at each milestone, mimicking the intimate warmth of a lover's touch. Rose petals, dim candlelight, and a bespoke romantic playlist set the mood for a deeply personal connection between body and soul.\n\nAs the journey nears its end, the experience culminates in our signature happy ending — a blissful, tension-melting finale that leaves every muscle surrendered and every sense at peace, sending you into a state of complete and utter euphoria.\n\nThis session closes with a tranquil heart-center hold — a moment of stillness where breath, energy, and emotion align. You will leave feeling profoundly seen, nurtured, and adored.",
     pricing: [
       { duration: 90, price: 3500 },
       { duration: 120, price: 4800 }
